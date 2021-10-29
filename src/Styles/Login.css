@@ -1,0 +1,121 @@
+.login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    
+    
+  }
+
+  .container {
+    max-width: 626px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .container h1 {
+    padding: 100px 0 21px 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.container p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.875rem;
+    padding-bottom: 8px;
+}
+
+.container .form-control {
+    padding-bottom: 35px;
+}
+.container form label {
+    font-size: 1rem;
+    display: block;
+    color: #000000;
+}
+.container form input {
+    padding: 20px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.container .bt-p {
+    padding-bottom: 51px;
+
+}
+.container .btn {
+    padding: 15px;
+    color: #fff;
+    background-color: #5271FF;
+    border: 1px solid #707070;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    font-size: 1rem;
+    font-family: 'poppins';
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+.container .btn:hover {
+    background-color: #5272ffdc;
+}
+
+@media screen and (max-width: 426px) {
+    
+    .container {
+        max-width: 375px;
+       padding: 0 30px;
+    }
+    
+    .container h1 {
+        font-size: 2.3rem;
+        
+    }
+    
+    .container p {
+        font-size: 1rem;
+        
+    }
+    
+    
+    .container form label {
+        font-size: 0.85rem;
+        
+    }
+    .container form input {
+        padding: 20px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .container .bt-p {
+        padding-bottom: 51px;
+    
+    }
+    .container .btn {
+        padding: 15px;
+        color: #fff;
+        background-color: #5271FF;
+        border: 1px solid #707070;
+        width: 100%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 15px;
+        font-size: 0.85rem;
+        font-family: 'poppins';
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+    .container .btn:hover {
+        background-color: #5272ffdc;
+    }
+    
+}

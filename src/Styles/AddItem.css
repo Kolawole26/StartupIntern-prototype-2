@@ -1,0 +1,57 @@
+.add {
+    padding: 79px 70px;
+    max-width: 626px;
+}
+
+
+.add .form-control {
+    padding-bottom: 35px;
+}
+.add form label {
+    font-size: 1rem;
+    display: block;
+    color: #000000;
+    padding-bottom: 8px;
+}
+.add form input {
+    padding: 20px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    width: 100%;
+}
+.add form textarea {
+    padding: 10px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    width: 100%;
+    height: 303px;
+}
+.add .bt-p {
+    padding-bottom: 51px;
+
+}
+.add .btn {
+    padding: 15px;
+    color: #fff;
+    background-color: #5271FF;
+    border: 1px solid #707070;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    font-size: 1rem;
+    font-family: 'poppins';
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.add .btn:hover {
+    background-color: #5272ffdc;
+}
+
+@media screen and (max-width: 426px) {
+    .add {
+        padding: 79px 40px;
+        
+    }
+}

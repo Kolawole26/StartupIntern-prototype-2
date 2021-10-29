@@ -1,0 +1,167 @@
+.wrap{
+    padding: 0 100px;
+    max-width: 1440px;
+}
+
+.wrap header {
+    text-align: center;
+}
+.wrap header .display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 79px;
+    padding-bottom: 6px;
+}
+.wrap header h1 {
+    
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+    
+}
+
+.wrap header p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    padding-bottom: 68px;
+    
+}
+.wrap .btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.wrap .btn {
+    padding: 15px;
+    color: #fff;
+    background-color: #5271FF;
+    border: 1px solid #707070;
+    width: 180px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-family: 'poppins';
+    cursor: pointer;
+    
+}
+.wrap .btn:hover {
+    background-color: #5272ffdc;
+}
+
+.wrap .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.wrap .grid-box {
+    padding: 25px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: #fff;
+    width: 100%;
+}
+.wrap .grid-box:first-child {
+    background-color: #FFF5A7;
+}
+.wrap .grid .text {
+    width: 100%;
+}
+.wrap .grid .content h5 {
+    font-size: 1rem;
+    font-weight: 700px;
+    margin-bottom: 6px;
+}
+
+.wrap .grid .content p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    margin-bottom: 18px;
+}
+
+.wrap .grid .grid-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrap .grid .grid-flex a {
+    color: #5271FF;
+    text-decoration: none;
+}
+
+.wrap .grid .grid-flex .date{
+    display: flex;
+    align-items: center;
+    
+}
+.wrap .grid .grid-flex .date p{
+    margin-left: 20px;
+    
+}
+.wrap .grid .grid-flex .date p:first-child{
+    color: #B2B2B2;
+    
+}
+
+@media screen and (max-width: 768px), (min-width: 425px) {
+    .wrap{
+        padding: 0 40px;
+        
+    }
+
+    .wrap header h1 {
+    
+        font-size: 2.1rem;
+        
+    }
+    
+    .wrap header p {
+        font-size: 0.9rem;
+        
+    }
+}
+@media screen and (max-width: 426px) {
+    .wrap{
+        padding: 0 40px;
+        
+    }
+
+    .wrap header .display {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrap .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .wrap .grid-box {
+        padding: 25px 20px;
+    }
+
+    .wrap header h1 {
+    
+        font-size: 1.9rem;
+        
+    }
+    
+    .wrap header p {
+        font-size: 0.85rem;
+        
+    }
+
+    .wrap .btn {
+        
+        width: 180px;
+        font-size: 1rem;
+        margin-bottom: 20px;
+        
+    }
+}

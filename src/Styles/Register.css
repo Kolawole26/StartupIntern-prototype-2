@@ -1,0 +1,121 @@
+.login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    
+    
+  }
+
+  .wrapper {
+    max-width: 626px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .wrapper h1 {
+    padding: 100px 0 21px 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.wrapper p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.875rem;
+    padding-bottom: 8px;
+}
+
+.wrapper .form-control {
+    padding-bottom: 35px;
+}
+.wrapper form label {
+    font-size: 1rem;
+    display: block;
+    color: #000000;
+}
+.wrapper form input {
+    padding: 20px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.wrapper .bt-p {
+    padding-bottom: 51px;
+
+}
+.wrapper .btn {
+    padding: 15px;
+    color: #fff;
+    background-color: #5271FF;
+    border: 1px solid #707070;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    font-size: 1rem;
+    font-family: 'poppins';
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+.wrapper .btn:hover {
+    background-color: #5272ffdc;
+}
+
+@media screen and (max-width: 426px) {
+    
+    .wrapper {
+        max-width: 375px;
+       padding: 0 30px;
+    }
+    
+    .wrapper h1 {
+        font-size: 2.0rem;
+        
+    }
+    
+    .wrapper p {
+        font-size: 1rem;
+        
+    }
+    
+    
+    .wrapper form label {
+        font-size: 0.85rem;
+        
+    }
+    .wrapper form input {
+        padding: 20px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .wrapper .bt-p {
+        padding-bottom: 51px;
+    
+    }
+    .wrapper .btn {
+        padding: 15px;
+        color: #fff;
+        background-color: #5271FF;
+        border: 1px solid #707070;
+        width: 100%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 15px;
+        font-size: 0.85rem;
+        font-family: 'poppins';
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+    .wrapper .btn:hover {
+        background-color: #5272ffdc;
+    }
+    
+}

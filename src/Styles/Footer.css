@@ -1,0 +1,17 @@
+.footer {
+    background-color: #60CED4;
+    padding: 23px 100px;
+    border: 1px solid #60CED5;
+    display: flex;
+    justify-content: flex-end
+}
+.footer p {
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 426px) {
+    .footer p {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+}

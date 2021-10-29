@@ -1,0 +1,113 @@
+.details {
+    padding: 0 70px;
+}
+
+.details header {
+    max-width: 1719px;
+}
+
+.details header h1 {
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 7px;
+    padding-top: 79px;
+}
+.details header p {
+    font-size: 0.875rem;
+    color: #5271FF;
+    font-weight: 400;
+    margin-bottom: 61px;
+}
+.details .para-text {
+    padding-bottom: 20px;
+    margin-bottom: 42px;
+    
+}
+.details .para-text p {
+    font-size: 1rem;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.5625rem;
+}
+.details .btn-flex {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.details .btn-cyan {
+    padding: 15px;
+    color: #fff;
+    border: none;
+    width: 180px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-family: 'poppins';
+    background-color: #06C3B4;
+    cursor: pointer;
+
+}
+.details .btn-red {
+    padding: 15px;
+    color: #fff;
+    border: none;
+    width: 180px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-family: 'poppins';
+    background-color: #C34F06;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+
+.details .btn-cyan:hover {
+    background-color: #06c3b3dc;
+    
+}
+
+.details .btn-red:hover {
+    background-color: #c34f06de;
+}
+
+@media screen and (max-width: 426px) {
+    .details {
+        padding: 0 40px;
+    }
+    
+    
+    
+    .details header h1 {
+        font-size: 1.5rem;
+        
+        padding-top: 70px;
+    }
+    .details header p {
+        font-size: 0.75rem;
+        
+    }
+    
+    .details .btn-flex {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+    .details .btn-flex button {
+        
+        margin-bottom: 20px;
+    }
+
+    .details .btn-cyan {
+        
+        width: 100%;
+    
+    }
+
+    .details .btn-red {
+        width: 100%;
+        margin-left: 0;
+    
+    }
+}
