@@ -100,19 +100,8 @@
     
     }
     .container .btn {
-        padding: 15px;
-        color: #fff;
-        background-color: #5271FF;
-        border: 1px solid #707070;
+        
         width: 100%;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 15px;
-        font-size: 0.85rem;
-        font-family: 'poppins';
-        cursor: pointer;
-        margin-bottom: 50px;
     }
     .container .btn:hover {
         background-color: #5272ffdc;

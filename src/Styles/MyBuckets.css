@@ -1,17 +1,20 @@
 .wrap{
     padding: 0 100px;
     max-width: 1440px;
+    margin: auto;
 }
 
-.wrap header {
-    text-align: center;
-}
+
 .wrap header .display {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 79px;
     padding-bottom: 6px;
+}
+
+.wrap header p {
+    text-align: left;
 }
 .wrap header h1 {
     
@@ -20,6 +23,7 @@
     color: #000000;
     
 }
+
 
 .wrap header p {
     font-size: 1rem;
@@ -113,6 +117,8 @@
         
     }
 
+    
+
     .wrap header h1 {
     
         font-size: 2.1rem;
@@ -133,6 +139,10 @@
     .wrap header .display {
         display: flex;
         flex-direction: column;
+    }
+
+    .wrap header p {
+        text-align: center;
     }
 
     .wrap .grid {
