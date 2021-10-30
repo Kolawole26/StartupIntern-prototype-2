@@ -103,12 +103,12 @@
 }
 
 @media screen and (max-width: 376px) {
-    .layout {
-        width: 320px;
+    .wrapper {
+        max-width: 320px
     }
     
     .wrapper h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     
     
@@ -121,11 +121,8 @@
 
 @media screen and (max-width: 320px) {
     .wrapper {
-        padding: 10px;
+        padding: 30px;
     }
     
-    .layout {
-        width: 240px;
-    }
     
 }
