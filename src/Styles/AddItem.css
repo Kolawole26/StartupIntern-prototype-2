@@ -54,4 +54,14 @@
         padding: 79px 40px;
         
     }
+
+    .add form label {
+        font-size: 0.85rem;
+    }
+
+    .add .btn {
+        
+        width: 100%;
+        font-size: 0.85rem;
+    }
 }
