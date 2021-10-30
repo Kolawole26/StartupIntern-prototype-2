@@ -120,10 +120,12 @@
 }
 
 @media screen and (max-width: 320px) {
-
+    .wrapper {
+        padding: 10px;
+    }
     
     .layout {
-        width: 250px;
+        width: 240px;
     }
     
 }
