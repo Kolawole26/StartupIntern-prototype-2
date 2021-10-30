@@ -66,8 +66,9 @@
     box-shadow: 0px 3px 6px #00000029;
     background-color: #fff;
     width: 100%;
+    transition: all 0.5s ease-in-out;
 }
-.wrap .grid-box:first-child {
+.wrap .grid-box:hover {
     background-color: #FFF5A7;
 }
 .wrap .grid .text {
@@ -173,5 +174,30 @@
         font-size: 1rem;
         margin-bottom: 20px;
         
+    }
+
+    @media screen and (max-width: 376px) {
+        .wrap{
+            padding: 0 20px;
+            
+        }
+
+        .wrap header h1 {
+    
+            font-size: 1.5rem;
+            
+        }
+        
+        .wrap header p {
+            font-size: 0.5rem;
+            
+        }
+
+        .wrap .grid .grid-flex {
+            flex-direction: column;
+        }
+
+        
+    
     }
 }
