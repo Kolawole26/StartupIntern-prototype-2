@@ -6,7 +6,7 @@ function Register() {
     return (
         <>
           <Navbar expand="lg" className="bg-cyan">
-                <Container>
+                <Container className="px-4 px-md-1 py-3 py-lg-0">
                     <Navbar.Brand className="logo fst-italic fw-bold" style={{ color: "#fff"}}>Eventful Momemts.</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll" className="justify-content-end">
@@ -27,19 +27,19 @@ function Register() {
                         <Form >
                             <Form.Group className="mb-3 " controlId="formBasicName">
                                 <Form.Label style={{ color: "#000"}}>Fullname</Form.Label>
-                                <Form.Control type="name"  />
+                                <Form.Control type="name" className="py-2" />
                             </Form.Group>
                             <Form.Group className="mb-3 " controlId="formBasicEmail">
                                 <Form.Label style={{ color: "#000"}}>Email</Form.Label>
-                                <Form.Control type="email"  />
+                                <Form.Control type="email" className="py-2" />
                             </Form.Group>
 
                             <Form.Group className="mb-4" controlId="formBasicPassword">
                                 <Form.Label style={{ color: "#000"}}>Password</Form.Label>
-                                <Form.Control type="password"  />
+                                <Form.Control type="password" className="py-2" />
                             </Form.Group>
                             
-                            <Button variant="primary" type="submit" className="button" style={{ color: "#fff"}}>
+                            <Button variant="primary" type="submit" className="button py-2" style={{ color: "#fff"}}>
                                 Create
                             </Button>
                         </Form>

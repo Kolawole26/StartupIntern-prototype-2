@@ -6,7 +6,7 @@ function SingleItem() {
     return (
         <>
            <Navbar expand="lg" className="bg-cyan">
-                <Container>
+                <Container className="px-4 px-md-1 py-3 py-lg-0">
                     <Navbar.Brand className="logo fst-italic fw-bold" style={{ color: "#fff"}}>Eventful Momemts.</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll" className="justify-content-end">
@@ -19,7 +19,7 @@ function SingleItem() {
                 </Container>
             </Navbar>   
 
-            <Container>
+            <Container className="px-4 px-md-1">
                      <h1 className="mt-5 fw-bold">Lorem ipsum began as scrambled, nonsensical Latin derived 
                         from Cicero’s 1scentury BC text De Finibus Bonorum et Malorum.</h1>
                     <p className="" style={{color: "#5271FF"}}>20/05/2025</p> 
@@ -44,7 +44,7 @@ function SingleItem() {
                     </div>
 
                     <div className="d-sm-flex block align-items-center my-5">
-                        <Link to='addItem' className="">
+                        <Link to='updateItem' className="">
                             <Button  type="submit" className="buttons py-2  " style={{ color: "#fff", backgroundColor: "#06C3B4", border: "none"}}>
                                 Edit
                             </Button>

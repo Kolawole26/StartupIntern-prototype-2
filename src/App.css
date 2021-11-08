@@ -6,8 +6,15 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 0;
+  margin: 0
+}
+
 .App {
   font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: auto;
 }
 
  .bg-cyan {
@@ -17,18 +24,10 @@
 
 
 .button {
-    padding: 15px;
-    color: #fff;
-    background-color: #5271FF;
-    border: 1px solid #707070;
     width: 50%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 15px;
-    font-size: 1rem;
-    font-family: 'poppins';
-    cursor: pointer;
     margin-bottom: 50px;
 }
 
@@ -47,6 +46,10 @@
 @media screen and (max-width: 426px) {
   
 
+  .button {
+      width: 100%;
+
+  }
   .buttons {
       width: 100%;
       margin-bottom: 10px;
