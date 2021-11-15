@@ -43,7 +43,7 @@ function EditItem() {
                         <label htmlFor="details">Details</label>
                         <textarea name="details" id="" cols="30" rows="10" ></textarea>
                         </div>
-                        <button className="btn">Save</button>
+                        <button className="btn">Update</button>
                         
                     </form>
             </div> 
