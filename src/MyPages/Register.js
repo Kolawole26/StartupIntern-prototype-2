@@ -1,34 +1,18 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 import '../Styles/Register.css'
-import ReorderIcon from '@mui/icons-material/Reorder';
+import { useEffect } from 'react';
 
-function Register() {
+
+function Register( {firstLinks} ) {
     
-    const [openLink, setOpenLink] = useState(false)
+    useEffect(() => {
+        firstLinks()
 
-    const toggleNavbar = () => {
-        setOpenLink(!openLink)
-    }
+     });
+   
 return (
     <div className="register">
-            <nav className="navbar">
-                <div className="left-side" id={openLink ? "open" : "close"}>
-                <Link to='/'><h2>Eventful Momemts.</h2></Link>
-                <div className="hiddenLink">
-                <Link to='/login'>Login</Link> 
-                   <Link to='register'>Register</Link>
-                </div>
-                </div>
-                <div className="right-side" >
-                   <Link to='/login'>Login</Link> 
-                   <Link to='register'>Register</Link>
-                   <button onClick={toggleNavbar}>
-                   <ReorderIcon />
-                   </button>
-                </div>
-                
-            </nav>
+            
             <div className="wrapper">
                     <div className="layout">
                         <h1>Create an account</h1>

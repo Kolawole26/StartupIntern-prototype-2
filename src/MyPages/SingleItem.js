@@ -1,34 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import '../Styles/SingleItem.css'
-import ReorderIcon from '@mui/icons-material/Reorder';
+import { useEffect } from 'react';
 
-function SingleItem() {
-    const [openLink, setOpenLink] = useState(false)
+function SingleItem( {secondLinks} ) {
+    useEffect(() => {
+        secondLinks()
 
-        const toggleNavbar = () => {
-            setOpenLink(!openLink)
-        }
+     });
 
     return (
         <div>
-            <nav className="navbar">
-                    <div className="left-side" id={openLink ? "open" : "close"}>
-                        <Link to='/'><h2>Eventful Momemts.</h2></Link>
-                        <div className="hiddenLink">
-                        <Link to='/login'>Logout</Link> 
-                       <Link to='/'>My Bucket</Link>
-                        </div>
-                    </div>
-                    <div className="right-side" >
-                        <Link to='/login'>Logout</Link> 
-                       <Link to='/'>My Bucket</Link>
-                       <button onClick={toggleNavbar}>
-                       <ReorderIcon />
-                       </button>
-                    </div>
-                    
-                </nav>
+          
              <div className="details">
                 <header>
                     <h1>Lorem ipsum began as scrambled, nonsensical Latin derived 

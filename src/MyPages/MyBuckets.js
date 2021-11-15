@@ -1,35 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import '../Styles/MyBuckets.css'
-import ReorderIcon from '@mui/icons-material/Reorder';
+import { useEffect } from 'react';
 
-function MyBuckets() {
+function MyBuckets( {secondLinks} ) {
     
-    const [openLink, setOpenLink] = useState(false)
+    useEffect(() => {
+        secondLinks()
 
-        const toggleNavbar = () => {
-            setOpenLink(!openLink)
-        }
-
+     });
+    
     return (
         <div className="bucket">
-            <nav className="navbar">
-                    <div className="left-side" id={openLink ? "open" : "close"}>
-                        <Link to='/'><h2>Eventful Momemts.</h2></Link>
-                        <div className="hiddenLink">
-                        <Link to='/login'>Logout</Link> 
-                       <Link to='/'>My Bucket</Link>
-                        </div>
-                    </div>
-                    <div className="right-side" >
-                        <Link to='/login'>Logout</Link> 
-                       <Link to='/'>My Bucket</Link>
-                       <button onClick={toggleNavbar}>
-                       <ReorderIcon />
-                       </button>
-                    </div>
-                    
-                </nav>
+            
 
                 <div className="wrap">
                 <header>

@@ -1,35 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../Styles/AddItem.css'
-import { Link } from 'react-router-dom'
-import ReorderIcon from '@mui/icons-material/Reorder';
+import { useEffect } from 'react';
 
-function AddItem() {
+function AddItem( {secondLinks} ) {
 
-    const [openLink, setOpenLink] = useState(false)
+    useEffect(() => {
+        secondLinks()
 
-        const toggleNavbar = () => {
-            setOpenLink(!openLink)
-        }
+     });
 
     return (
         <div>
-            <nav className="navbar">
-                    <div className="left-side" id={openLink ? "open" : "close"}>
-                        <Link to='/'><h2>Eventful Momemts.</h2></Link>
-                        <div className="hiddenLink">
-                        <Link to='/login'>Logout</Link> 
-                       <Link to='/'>My Bucket</Link>
-                        </div>
-                    </div>
-                    <div className="right-side" >
-                        <Link to='/login'>Logout</Link> 
-                       <Link to='/'>My Bucket</Link>
-                       <button onClick={toggleNavbar}>
-                       <ReorderIcon />
-                       </button>
-                    </div>
-                    
-                </nav>
+            
            <div className="add">
                 
                 <form >

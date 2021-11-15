@@ -1,36 +1,20 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 import '../Styles/Login.css'
-import ReorderIcon from '@mui/icons-material/Reorder';
+import { useEffect } from 'react';
 
 
 
-function Login() {
 
-        const [openLink, setOpenLink] = useState(false)
+function Login( {firstLinks} ) {
+   
+    useEffect(() => {
+        firstLinks()
 
-        const toggleNavbar = () => {
-            setOpenLink(!openLink)
-        }
+     });
+        
     return (
         <div className="login">
-                <nav className="navbar">
-                    <div className="left-side" id={openLink ? "open" : "close"}>
-                    <Link to='/'><h2>Eventful Momemts.</h2></Link>
-                    <div className="hiddenLink">
-                    <Link to='/login'>Login</Link> 
-                       <Link to='register'>Register</Link>
-                    </div>
-                    </div>
-                    <div className="right-side" >
-                       <Link to='/login'>Login</Link> 
-                       <Link to='register'>Register</Link>
-                       <button onClick={toggleNavbar}>
-                       <ReorderIcon />
-                       </button>
-                    </div>
-                    
-                </nav>
+                
             <div className="container">
                     <h1>Welcome back,</h1>
                     <p>Hi, my name is Eventful Moments, I am a bucket... no, not the 
