@@ -1,24 +1,18 @@
 import React from 'react'
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import {  Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
-function SingleItem() {
+function SingleItem( {secondLinks} ) {
+
+    useEffect(() => {
+        secondLinks()
+
+     });
+
     return (
         <>
-           <Navbar expand="lg" className="bg-cyan">
-                <Container className="px-4 px-md-1 py-3 py-lg-0">
-                    <Navbar.Brand className="logo fst-italic fw-bold" style={{ color: "#fff"}}>Eventful Momemts.</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Navbar.Collapse id="navbarScroll" className="justify-content-end">
-                    <Nav className="me-end my-2 my-3 ">
-                            <Link to="/login" className="text-decoration-none nav-link" style={{color: "#fff"}}>Logout</Link>
-                            <Link to="/" className="text-decoration-none nav-link" style={{color: "#fff"}}>My Bucket</Link>
-                    </Nav>
-                    
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>   
-
+          
             <Container className="px-4 px-md-1">
                      <h1 className="mt-5 fw-bold">Lorem ipsum began as scrambled, nonsensical Latin derived 
                         from Cicero’s 1scentury BC text De Finibus Bonorum et Malorum.</h1>

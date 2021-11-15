@@ -1,23 +1,18 @@
 import React from 'react'
-import { Navbar, Nav, Container, Button, Row, Col } from 'react-bootstrap';
+import { Container, Button, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
-function MyBuckets() {
+function MyBuckets( {secondLinks} ) {
+
+    useEffect(() => {
+        secondLinks()
+
+     });
+
     return (
         <>
-           <Navbar expand="lg" className="bg-cyan ">
-                <Container className="px-4 px-md-1 py-3 py-lg-0">
-                    <Navbar.Brand className="logo fst-italic fw-bold" style={{ color: "#fff"}}>Eventful Momemts.</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Navbar.Collapse id="navbarScroll" className="justify-content-end">
-                    <Nav className="me-end my-2 my-3 ">
-                            <Link to="/login" className="text-decoration-none nav-link" style={{color: "#fff"}}>Logout</Link>
-                            <Link to="/" className="text-decoration-none nav-link" style={{color: "#fff"}}>My Bucket</Link>
-                    </Nav>
-                    
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>  
+           
 
             <Container className="px-4 px-md-1">
                 <div className="d-sm-flex justify-content-between align-items-center mt-5 pt-3">
@@ -35,7 +30,7 @@ function MyBuckets() {
                 </div>
                 <p className="mb-5 pb-3 text-center text-sm-start">Here are items in your eventful moment bucket.</p>
                 <Row className="g-3 mb-5 mx-2">
-                    <Col md={6} className=" p-4  shadow  bg-body rounded ">
+                    <Col md={6} className=" p-4  shadow  bg-body rounded h ">
                     <h6 className="fw-bold mb-3 lh-base">Lorem ipsum began as scrambled, nonsensical Latin derived from Cicero’s 1scentury BC text De Finibus Bonorum et Malorum.</h6>
                             <p className="lh-base">
                                     Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It’s not Latin, though it looks like it,
